@@ -1,0 +1,446 @@
+/**SCSS**/
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+
+  &.shrikhand {
+    font-family: Shrikhand, sans-serif;
+    font-weight: normal;
+    padding: 20px 0 20px 20px;
+  }
+}
+
+h2 {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h3 {
+  font-size: .875rem;
+  font-weight: bold;
+}
+
+//Header section
+header {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+  max-width: $wrapper;
+  padding-top: 10px;
+  position: relative;
+
+  .header-left {
+    background-color: darken($grey-color, 5);
+    margin-bottom: 20px;
+    width: 375px;
+  }
+
+  .search-location {
+    border-top: 2px solid $border-contrast;
+    display: flex;
+
+    input {
+      background-color: transparent;
+      border: 0;
+      padding: 15px 10px;
+      width: 100%;
+    }
+
+    .icon-wrapper {
+      padding: 8px 10px;
+    }
+
+    .input-field {
+      flex: 1 0 0;
+    }
+  }
+
+  .back-btn {
+    display: block;
+    left: 20px;
+    position: absolute;
+    top: 30px;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .cover-img {
+    height: 270px;
+    width: 100%;
+    z-index: -1;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+.search-location {
+  &[type='text'] {
+
+    &::placeholder {
+      color: $text-grey;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+}
+
+//Main section
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $wrapper;
+
+}
+
+
+
+.reserve {
+  flex: 0 0 100%;
+  margin: 0 -15px;
+  padding: 30px 10px;
+  text-align: center;
+
+  h1 {
+    margin: 15px;
+  }
+
+  h2 {
+    color: $text-grey-light;
+    font-size: 1.125rem;
+    font-weight: normal;
+    margin: 20px 15px;
+
+  }
+
+  hgroup {
+    margin-bottom: 35px;
+  }
+
+  .button1 {
+    margin-bottom: 30px;
+  }
+}
+
+aside {
+  flex: 0 0 100%;
+  padding: 30px 10px;
+
+  h2 {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 100%;
+  }
+
+  .select {
+    align-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+  }
+
+  .step-button {
+    background-color: $grey-color;
+    border-radius: 30px;
+    box-shadow: $btn1-shadow;
+    flex: 1 0 auto;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 25px 15px;
+    position: relative;
+
+
+    .circle-number {
+      background-color: $primary;
+      border-radius: 100%;
+      color: $white-color;
+      display: block;
+      font-weight: bold;
+      height: 25px;
+      left: -12px;
+      line-height: 1.67;
+      position: absolute;
+      text-align: center;
+      width: 25px;
+    }
+
+    .icon {
+      display: inline-block;
+      margin: 0 15px;
+      min-width: 30px;
+
+      i {
+        font-size: 20px;
+      }
+    }
+
+    .link-text {
+      font-weight: bold;
+    }
+
+    &:hover {
+      background-color: lighten($primary, 35%);
+      box-shadow: 2px 2px 10px 2px lighten($primary, 30%);
+
+      .icon {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.home {
+  main {
+    >section {
+      flex: 1 0 0;
+    }
+
+    .card {
+      flex: 1 0 0;
+    }
+  }
+
+}
+
+//Cards css
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  height: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 15px;
+
+  //Title cards section
+  h2 {
+    padding: 15px 0 15px 15px;
+    width: 100%;
+  }
+}
+
+//One card css
+.card {
+  background-color: $white-color;
+  box-shadow: $card-shadow;
+  display: flex;
+  flex: 1 0 25%;
+  flex-direction: column;
+  margin: 15px;
+  min-width: 0;
+  position: relative;
+  word-wrap: break-word;
+
+  //Imaged card
+  h3 {
+    font-weight: bold;
+  }
+
+  h4 {
+    font-weight: normal;
+  }
+}
+
+
+// menu css
+.menu {
+  main {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -40px;
+    z-index: 999;
+  }
+
+  .cards {
+    background-color: transparent;
+    flex-flow: row wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .restaurant-title {
+    position: relative;
+    width: 100%;
+
+    .like {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+    }
+  }
+
+  .sub-title {
+    font-size: 1rem;
+    font-weight: normal;
+    padding-left: 0;
+    width: 100%;
+
+    &::after {
+      border-bottom: 2px solid $tertiary;
+      content: '';
+      display: block;
+      padding-top: 3px;
+      width: 40px;
+    }
+  }
+}
+
+// Card img css
+.card-img {
+  border-radius: 15px;
+
+  .card-img-header {
+    max-height: 200px;
+    position: relative;
+
+    .img-btn-left {
+      background-color: $tertiary;
+      color: darken($tertiary, 35);
+      font-weight: bold;
+      padding: 3px 10px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      z-index: 999;
+    }
+  }
+
+  img {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    width: 100%;
+
+    hgroup {
+      flex: 0 0 85%;
+    }
+  }
+}
+
+.card-menu {
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+
+  hgroup {
+    flex: 1;
+    overflow: hidden;
+    padding: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    margin: 0 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  h4 {
+    color: $text-grey;
+    font-size: 1rem;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .caption-check-box {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    display: none;
+    position: relative;
+
+    i {
+      color: $white-color;
+      font-size: 24px;
+      transform: rotate(360deg);
+    }
+  }
+
+  .price {
+    align-items: center;
+    display: flex;
+    font-size: 1.125rem;
+    font-weight: bold;
+    justify-content: flex-end;
+    padding-right: 10px;
+    text-align: right;
+  }
+}
+
+
+//Order button
+.order {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: $text-grey;
+  color: $white-color;
+  padding: 20px;
+  text-align: center;
+
+
+  a {
+    color: $white-color;
+  }
+
+  .container {
+    margin: auto;
+    max-width: 100%;
+  }
+
+  .logo {
+    img {
+      filter: invert(1);
+    }
+  }
+
+  .col-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .one {
+    flex: 1 0 50%;
+  }
+
+  .footer-icon {
+    i {
+      min-width: 30px;
+    }
+  }
+}

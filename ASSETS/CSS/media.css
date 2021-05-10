@@ -1,0 +1,194 @@
+/**CSS**/
+@media screen and (max-width: 1024px) {
+    .home .card {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 33%;
+              flex: 1 0 33%;
+    }
+    .reserve {
+      margin: 0;
+    }
+    .menu .cards {
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .menu .cards > .card {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 33%;
+              flex: 1 0 33%;
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header-left {
+      width: 100%;
+    }
+    .header-left .search-location {
+      margin: auto;
+      width: 200px;
+    }
+    aside .select {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+    }
+    main .cards {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    main .cards > .card {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 33%;
+              flex: 1 0 33%;
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+    }
+    header .logo {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      padding: 15px;
+      text-align: center;
+    }
+    header .logo img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 60%;
+    }
+    header .header-left {
+      width: 100%;
+    }
+    header .search-location {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 0;
+      margin-left: 70px;
+      padding: 5px;
+      text-align: center;
+    }
+    header .cover-img {
+      z-index: -1;
+    }
+    .reserve h2 {
+      margin: 0 15px;
+    }
+    main .cards {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    main .cards > .card {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 0px;
+              flex: 1 0 0;
+      margin-bottom: 15px;
+    }
+    .menu main {
+      border-top-left-radius: 35px;
+      border-top-right-radius: 35px;
+      margin-top: -50px;
+      z-index: 999;
+    }
+    .menu main .shrikhand {
+      font-size: 1.75rem;
+      padding: 30px 10px 20px 15px;
+    }
+    .menu main .cards {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+    }
+    .menu main .cards .sub-title {
+      font-size: 1.25rem;
+    }
+    aside {
+      margin-top: 25px;
+    }
+    aside .select {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+      padding: 15px;
+      position: relative;
+    }
+    aside .step-button {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    footer {
+      text-align: left;
+    }
+    footer .logo {
+      width: 150px;
+    }
+    footer .logo img {
+      max-width: 150px;
+    }
+  }
+  
+  .card-menu {
+    border-radius: 15px;
+    cursor: pointer;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 10px 0;
+  }
+  
+  .card-menu:hover .fa-check-circle {
+    left: 27%;
+  }
+  
+  @media screen and (max-width: 375px) {
+    .menu .cards {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+    }
+  }
+  /*# sourceMappingURL=media.css.map */

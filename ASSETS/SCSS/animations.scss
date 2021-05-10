@@ -1,0 +1,142 @@
+/**SCSS**/
+@import 'keyframes';
+
+//Menu cards CSS
+.card-menu {
+  &:hover {
+    box-shadow: $btn1-shadow-hover;
+
+    hgroup {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .price {
+      animation: caption-check-box-price ease .3s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      min-width: 50px;
+    }
+
+    .caption-check-box {
+      animation: caption-check-box ease .3s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      background-color: $tertiary;
+      display: block;
+      flex: 0 0 15%;
+      max-width: 50px;
+      overflow: hidden;
+      transform-origin: 50% 50%;
+    }
+
+    .fa-check-circle {
+      animation: check-box ease .5s;
+      animation-iteration-count: 1;
+      background-color: $tertiary;
+      left: 27%;
+      position: absolute;
+      top: 30%;
+    }
+  }
+}
+
+//Like button (heart)
+.like {
+  position: relative;
+
+  .hover-icon {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+  }
+
+  i {
+    color: darken($grey-color, 35);
+    font-size: 24px;
+    left: 50%;
+  }
+
+  &:hover {
+    cursor: pointer;
+    overflow: hidden;
+
+    .default-icon {
+      opacity: 0;
+      transition: .5s 0s ease;
+    }
+
+    .hover-icon {
+      color: $primary;
+      opacity: 1;
+      transition: .5s 0s ease;
+      z-index: 999;
+    }
+  }
+}
+
+// Lazy
+@for $i from 1 through 15 {
+  .fade-#{$i} {
+    animation: fadein $card-delay * $i;
+  }
+}
+
+
+//Loader
+.loadspinner {
+  animation: loadspinner 2s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  background-color: $spiner-bg-bk;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 999;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .spinner-wrapper {
+    border: 5px solid $white-color;
+    border-radius: 50%;
+    display: inline-block;
+    height: 100px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    vertical-align: middle;
+    width: 100px;
+
+
+    .spinner-cover {
+      background: $white-color;
+      border-radius: 50%;
+      height: 100%;
+      position: relative;
+      width: 100%;
+      z-index: 2;
+    }
+
+    .spinner-bar {
+      animation: spinner 2s linear infinite;
+      background: $secondary;
+      border-radius: 100% 0 0;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform-origin: 100% 100%;
+      width: 50%;
+    }
+  }
+}

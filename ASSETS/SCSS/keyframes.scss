@@ -1,0 +1,116 @@
+/**SCSS**/
+// Checkbox icon animation rotate
+@keyframes check-box {
+  10% {
+    transform: rotate(-90deg);
+  }
+
+  20% {
+    transform: rotate(-75deg) scale(1.03);
+  }
+
+  40% {
+    transform: rotate(-60deg) scale(1.08);
+  }
+
+  60% {
+    transform: rotate(-45deg) scale(1.15);
+  }
+
+  80% {
+    transform: rotate(-30deg) scale(1.08);
+  }
+
+  100% {
+    transform: rotate(5deg) scale(1);
+  }
+}
+
+// Checkbox slide animation
+@keyframes caption-check-box {
+  0% {
+    opacity: .5;
+    transform: translate(50px, 0);
+  }
+
+  20% {
+    opacity: .6;
+    transform: translate(30px, 0);
+  }
+
+  40% {
+    opacity: .7;
+    transform: translate(20px, 0);
+  }
+
+  60% {
+    opacity: .8;
+    transform: translate(15px, 0);
+  }
+
+  80% {
+    opacity: .9;
+    transform: translate(7px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(1px, 0);
+  }
+}
+
+//After checkboxbox animate price
+@keyframes caption-check-box-price {
+  0% {
+    transform: translate(50px, 0);
+  }
+
+  40% {
+    transform: translate(25px, 0);
+  }
+
+  70% {
+    transform: translate(12px, 0);
+  }
+
+  100% {
+    transform: translate(1px, 0);
+  }
+}
+
+// Fade-in animation
+@keyframes fadein {
+  from {
+    transform: scale(.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+//Load Spinner animation wrapper
+@keyframes loadspinner {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+//Spinner animation rotate
+@keyframes spinner {
+  0% {
+    background: lighten($secondary, 10);
+    transform: rotate(0deg);
+  }
+
+  50% {
+    background: $secondary;
+    transform: rotate(180deg);
+  }
+
+  100% {
+    background: lighten($secondary, 10);
+    transform: rotate(360deg);
+  }
+}

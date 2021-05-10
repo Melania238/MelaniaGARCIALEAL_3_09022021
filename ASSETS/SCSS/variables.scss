@@ -1,0 +1,26 @@
+/**SCSS**/
+//Colors
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
+$grey-color: #f6f6f6;
+$white-color: #fff;
+$border-contrast: #e0e0e0;
+$text-grey: #333;
+$text-grey-light: #888;
+
+//Width
+$wrapper: 1440px;
+
+//Buttons
+$btn1-color: linear-gradient($secondary, $primary);
+$btn1-shadow: 0 5px 15px 0 darken($grey-color, 20);
+$btn1-shadow-hover: 0 5px 15px 0 darken($grey-color, 35);
+$btn-padding: 15px 30px;
+
+//Animations
+$card-delay: .4s;
+$spiner-bg-bk: rgba(10, 10, 10, .6);
+
+//Cards
+$card-shadow: 2px 2px 10px 2px #e0e0e0;

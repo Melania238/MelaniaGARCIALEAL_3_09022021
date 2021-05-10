@@ -1,0 +1,187 @@
+/**SCSS**/
+@media screen and (max-width: 1024px) {
+  .home {
+    .card {
+      flex: 1 0 33%;
+    }
+  }
+
+  .reserve {
+    margin: 0;
+  }
+
+  .menu {
+    .cards {
+      align-items: stretch;
+      flex-flow: row wrap;
+      margin-left: 0;
+      margin-right: 0;
+
+      >.card {
+        flex: 1 0 33%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .header-left {
+    width: 100%;
+
+    .search-location {
+      margin: auto;
+      width: 200px;
+    }
+  }
+
+  aside {
+    .select {
+      flex-direction: column;
+      flex-flow: column;
+    }
+  }
+
+  main {
+    .cards {
+      flex-flow: row wrap;
+      margin-left: 0;
+      margin-right: 0;
+
+      >.card {
+        flex: 1 0 33%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    flex-flow: column;
+
+    .logo {
+      flex: 0 0 100%;
+      padding: 15px;
+      text-align: center;
+
+      img {
+        object-fit: cover;
+        width: 60%;
+      }
+    }
+
+    .header-left {
+      width: 100%;
+    }
+
+    .search-location {
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 0;
+      margin-left: 70px;
+      padding: 5px;
+      text-align: center;
+    }
+
+    .cover-img {
+      z-index: -1;
+    }
+  }
+
+  .reserve {
+    h2 {
+      margin: 0 15px;
+    }
+  }
+
+  main {
+    .cards {
+      flex-flow: column wrap;
+      margin-left: 0;
+      margin-right: 0;
+
+      >.card {
+        flex: 1 0 0;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .menu {
+    main {
+      border-top-left-radius: 35px;
+      border-top-right-radius: 35px;
+      margin-top: -50px;
+      z-index: 999;
+
+      .shrikhand {
+        font-size: 1.75rem;
+        padding: 30px 10px 20px 15px;
+      }
+
+      .cards {
+        flex-flow: column nowrap;
+
+        .sub-title {
+          font-size: 1.25rem;
+        }
+
+
+      }
+    }
+  }
+
+  aside {
+    margin-top: 25px;
+
+    .select {
+      display: flex;
+      flex-direction: column;
+      flex-flow: column;
+      padding: 15px;
+      position: relative;
+    }
+
+    .step-button {
+      flex: 0 0 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  footer {
+    text-align: left;
+
+    .logo {
+      width: 150px;
+
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+}
+
+.card-menu {
+  border-radius: 15px;
+  cursor: pointer;
+  flex-direction: row;
+  margin: 10px 0;
+
+  &:hover {
+    .fa-check-circle {
+      left: 27%;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .menu {
+    .cards {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  }
+}
