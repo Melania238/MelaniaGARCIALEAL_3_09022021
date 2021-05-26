@@ -175,6 +175,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
     margin: 10px 0;
+    margin-right: 3px;
   }
   
   .card-menu:hover .fa-check-circle {
