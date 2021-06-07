@@ -563,7 +563,7 @@ aside .step-button:hover .icon {
 .card-img img {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-  max-height: 200px;
+  max-height: 140px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
