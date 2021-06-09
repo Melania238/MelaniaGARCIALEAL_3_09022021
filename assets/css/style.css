@@ -627,7 +627,7 @@ aside .step-button:hover .icon {
 
 .card-menu h4 {
   color: #333;
-  font-size: 1rem;
+  font-size: 0.9em;
   font-weight: normal;
   overflow: hidden;
   text-overflow: ellipsis;
