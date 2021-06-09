@@ -325,6 +325,10 @@ main {
   max-width: 1440px;
 }
 
+.localisation{
+  background-color: gainsboro;
+  }
+  
 .reserve {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -1031,6 +1035,7 @@ footer .footer-icon i {
 .fade-1 {
   -webkit-animation: fadein 0.4s;
           animation: fadein 0.4s;
+          background-color: #F2F2F2;
 }
 
 .fade-2 {
@@ -1171,8 +1176,14 @@ footer .footer-icon i {
           -ms-flex: 1 0 33%;
               flex: 1 0 33%;
     }
+
+    .localisation{
+    background-color: gainsboro;
+    }
+
     .reserve {
       margin: 0;
+      background-color: #f2f2f2;
     }
     .menu .cards {
       -webkit-box-align: stretch;
