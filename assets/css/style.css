@@ -327,8 +327,13 @@ main {
 
 .localisation{
   background-color: gainsboro;
-  }
-  
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  filter: drop-shadow(0 -2px 2px rgb(172, 171, 171));
+}
+
 .reserve {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
